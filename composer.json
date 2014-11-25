@@ -6,7 +6,6 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"pda/pheanstalk": "~2.0",
-		"components/jquery": "1.11.*"
 	},
 	"autoload": {
 		"classmap": [
