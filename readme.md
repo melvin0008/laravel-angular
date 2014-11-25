@@ -1,13 +1,13 @@
 Laravel -AngularJS-CouchDB-Redis-Sendgrid-Beanstalk Template
 ===========================================================
 
-Features supported:   
--Laravel 4.2   --PHP Framework
--AngularJS 1.3   --AngularJS Frontend Framework
--CouchDB    --NoSQL Database
--Redis    --Caching Database
--Sendgrid -- Mailing service
--Beanstalk --Queue Service
+Features supported:    
+-Laravel 4.2   : PHP Framework   
+-AngularJS 1.3   : AngularJS Frontend Framework   
+-CouchDB    : NoSQL Database   
+-Redis    : Caching Database   
+-Sendgrid : Mailing service  
+-Beanstalk : Queue Service  
 
 
 Select all or any service you want    
