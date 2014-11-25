@@ -19,42 +19,35 @@ use Melvin\CouchDB\couchReplicator;
 Route::group(array('domain' => 'admin.gov.localhost.com'), function()
 {
 
-   // Route::get('/','trialController@admin' );
-	Route::get('/',function(){
-		Queue::push(function($job) 
-		{
-			$in=1;
-			Log::info($in);
-			$job->delete();
-		});
-			$data['pig']="anurag";
-	Mail::queue('emails.welcome', $data, function($message)
+   Route::get('/', function()
 	{
-    	$message->to('melvin.philips@feecounter.com', 'Melvin Philips')->subject('Welcome!');
+	return View::make('admin.index');
 	});
-
-	});
+   Route::get('/book',function(){
+   		return "Yoman";
+   });
 
 });
 Route::group(array('domain' => 'public.gov.localhost.com'), function()
 {
 
    // Route::get('/','trialController@publicsite' );
-		Route::get('/',function(){
+		Route::get('/gomi',function(){
 		Queue::push(function($job) 
 		{
 			Log::info('Queues are pretty damn cool');
 			$job->delete();
-		});
-	});
 
+		});    
+		
+	});
 
 
 });
 Route::group(array('domain' => 'spacedeck.gov.localhost.com'), function()
 {
 
-    Route::get('/','trialController@spacedeck' );
+    Route::get('/trial','trialController@checkLogin' );
 
 
 });
@@ -93,4 +86,33 @@ $domain = $redis->get('domain');
 $connection=setDB("trial");
 $db=json_encode($connection->findDocument($id));
 return $db;
-}*/
+}
+// $client = new \GuzzleHttp\Client();
+		// $txtDict['workingkey']='11311fk09029s04a8416';
+		// $txtDict['to']='9049733143';
+		// $txtDict['message']="Hello";
+		// $txtDict['sender']='FEECTR';
+		// $response = $client->get('http://alerts.sinfini.com/api/web2sms.php',['query'=>$txtDict]);
+		// dd($response->getBody());
+		*/
+
+
+
+//Mailing 
+
+ // public function admin()
+ //    {
+        
+ //    	Queue::push(function($job) 
+ //        {
+ //            $in=1;
+ //            Log::info($in);
+ //            $job->delete();
+ //        });
+ //            $data['pig']="anurag";
+ //        Mail::queue('emails.welcome', $data, function($message)
+ //         {   
+ //            $message->to('melvin.philips@feecounter.com', 'Melvin Philips')->subject('Welcome!');
+ //        });
+ //        $name="Mail Sent";
+ //        return View::make('admin.first',compact('name'));

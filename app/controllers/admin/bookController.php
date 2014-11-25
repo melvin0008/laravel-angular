@@ -1,12 +1,16 @@
 <?php
 
-class TrialController extends BaseController {
+class BookController extends BaseController {
 
     /**
      * Setup the layout used by the controller.
      *
      * @return void
      */
+    public function getbook()
+    {
+        return "Yoman";
+    }
     protected function checkLogin()
     {
 
