@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'mail@feecounter.com', 'name' => 'Feecounter'),
+	'from' => array('address' => 'mailid@company.com', 'name' => 'from_name'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'feecounter',
+	'username' => 'sendgrid_uname',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'zA5maZiN',
+	'password' => 'sendgrid_pwd',
 
 	/*
 	|--------------------------------------------------------------------------

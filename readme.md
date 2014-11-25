@@ -23,5 +23,10 @@ Write map reduce functions in couchwrite or couchread and run python deploy.py o
 ###For BeanStalk users:
 Install supervisor  
 Use link for setup http://fideloper.com/ubuntu-beanstalkd-and-laravel4
+   
+After git clone run php artisan dump-autoload  
+composer dump-autoload
+
+
 ###TO-DO  
 ORM for CouchDB
