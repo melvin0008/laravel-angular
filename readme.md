@@ -9,11 +9,11 @@ Features supported:
 -Sendgrid : Mailing service  
 -Beanstalk : Queue Service  
 
-
-Select all or any service you want    
-Perfect boilerplate to start coding   
-Subdomain1 and Subdomain2 are the multi domains
-Can add more subdomains
+ 
+Select all or any service you want       
+Perfect boilerplate to start coding      
+Subdomain1 and Subdomain2 are the multi domains   
+Can add more subdomains   
 Perfect blend of an Application using Laravel and AngularJS.
 
 ###For CouchDB users 
