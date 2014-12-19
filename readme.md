@@ -28,5 +28,10 @@ After git clone run php artisan dump-autoload
 composer dump-autoload
 
 
+Setup virtual hostst pointing to    
+public/subdomain1 for the first subdomain     
+
+public/subdomain2 for the second sub domain    
+
 ###TO-DO  
 ORM for CouchDB
