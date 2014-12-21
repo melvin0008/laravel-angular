@@ -33,5 +33,7 @@ public/subdomain1 for the first subdomain
 
 public/subdomain2 for the second sub domain    
 
+Special Thanks to dready92 https://github.com/dready92/PHP-on-Couch to have libraries for couchdb
+
 ###TO-DO  
 ORM for CouchDB
